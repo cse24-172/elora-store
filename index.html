@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ÉLORA — thoughtfully selected beauty and fashion essentials. Elegance in every detail.">
+  <title>ÉLORA | Beauty, Fashion & Lifestyle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">A little luxury, wherever you are.</div>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="ÉLORA home">ÉLORA</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#beauty">Beauty</a><a href="#fashion">Fashion</a><a href="#about">Our story</a>
+    </nav>
+    <button class="cart-button" id="cart-toggle" aria-label="Open shopping bag">Bag <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">BEAUTY · FASHION · LIFESTYLE</p>
+        <h1>Discover your<br><em>everyday elegance.</em></h1>
+        <p class="hero-text">Thoughtfully selected beauty and fashion essentials for every moment.</p>
+        <a class="dark-button" href="#shop">EXPLORE THE COLLECTION</a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Neutral-toned beauty and fashion editorial still life"></div>
+    </section>
+
+    <section class="intro" id="about">
+      <p class="eyebrow">THE ÉLORA EDIT</p>
+      <h2>A little luxury.<br><em>A lot of you.</em></h2>
+      <p>ÉLORA is a beauty and fashion destination for the details that make your everyday feel special.</p>
+    </section>
+
+    <section class="categories" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FAVOURITES</p><h2>Shop by category</h2></div><span>01 / 02</span></div>
+      <div class="category-grid">
+        <a class="category-card beauty-card" id="beauty" href="#products"><span>THE BEAUTY EDIT</span><strong>Beauty</strong><small>Explore the edit ↗</small></a>
+        <a class="category-card fashion-card" id="fashion" href="#products"><span>THE STYLE EDIT</span><strong>Fashion</strong><small>Explore the edit ↗</small></a>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="section-heading"><div><p class="eyebrow">COMING SOON</p><h2>The first ÉLORA edit</h2></div><span>CURATED WITH CARE</span></div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image image-one"><span>BEAUTY</span></div>
+          <h3>Heatless Curling Set</h3><p>Effortless styling, made simple.</p><button class="outline-button" data-product="Heatless Curling Set">Notify me when available</button>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-two"><span>BEAUTY</span></div>
+          <h3>Makeup Organiser</h3><p>A beautiful home for your essentials.</p><button class="outline-button" data-product="Makeup Organiser">Notify me when available</button>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-three"><span>FASHION</span></div>
+          <h3>Everyday Jewellery Set</h3><p>The finishing touch to your look.</p><button class="outline-button" data-product="Everyday Jewellery Set">Notify me when available</button>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-four"><span>FASHION</span></div>
+          <h3>Mini Shoulder Bag</h3><p>Your new everyday companion.</p><button class="outline-button" data-product="Mini Shoulder Bag">Notify me when available</button>
+        </article>
+      </div>
+      <p class="notice">Preview collection only. Products, prices and delivery estimates will be added after supplier checks.</p>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">BE FIRST TO KNOW</p><h2>Something lovely<br><em>is on its way.</em></h2>
+      <p>Join the ÉLORA list for launch news and new arrivals.</p>
+      <form id="newsletter-form"><input type="email" placeholder="Your email address" aria-label="Your email address" required><button type="submit">JOIN US</button></form>
+      <p class="form-message" id="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark" href="#">ÉLORA</a><p>Elegance in every detail.</p>
+    <div class="footer-links"><a href="#about">About</a><a href="mailto:hello@elorashop.com">Contact</a><a href="#shop">Shop</a></div>
+    <small>© <span id="year"></span> ÉLORA. All rights reserved.</small>
+    <small class="disclaimer">Independent concept brand. Not affiliated with any other brand using a similar name.</small>
+  </footer>
+
+  <dialog id="notify-dialog">
+    <form method="dialog" class="dialog-inner">
+      <button class="close-dialog" aria-label="Close">×</button>
+      <p class="eyebrow">ÉLORA FIRST ACCESS</p><h2>Be first to know.</h2>
+      <p id="selected-product">Get launch updates for this product.</p>
+      <label for="notify-email">Email address</label><input id="notify-email" type="email" placeholder="you@example.com" required>
+      <button class="dark-button" id="notify-submit" value="submit">SIGN ME UP</button>
+      <small class="form-message" id="notify-message">Demo form: connect an email marketing service before launch.</small>
+    </form>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
